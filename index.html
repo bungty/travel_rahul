@@ -124,117 +124,169 @@
 </style>
 
 <!-- About Us Section -->
-<section class="py-5 bg-light">
+<section class="py-5 about-section">
   <div class="container">
-    <div class="row align-items-center">
-
-      <!-- Image -->
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="images/banner.jpg" 
-             class="img-fluid rounded shadow" 
-             alt="Char Dham Yatra">
-      </div>
+    <div class="row align-items-center g-5">
 
       <!-- Content -->
       <div class="col-md-6">
-        <h2 class="fw-bold mb-3">About Char Dham Yatra</h2>
-        <p class="text-muted">
+        <span class="badge bg-warning text-dark mb-3">About Us</span>
+
+        <h2 class="fw-bold mb-3">
+          Experience the Divine <span class="text-warning">Char Dham Yatra</span>
+        </h2>
+
+        <p class="text-muted mb-3">
           Char Dham Yatra is one of the most sacred pilgrimages in India, covering 
           Yamunotri, Gangotri, Kedarnath, and Badrinath. Our mission is to provide 
           safe, comfortable, and spiritually enriching travel experiences.
         </p>
 
-        <p class="text-muted">
-          With years of experience in religious tourism, we offer well-planned tour 
-          packages, comfortable stays, trusted transport, and complete travel support 
-          for a peaceful and divine journey.
-        </p>
+        <ul class="list-unstyled mb-4">
+          <li class="mb-2"><i class="bi bi-check-circle text-warning"></i> Trusted Religious Tour Experts</li>
+          <li class="mb-2"><i class="bi bi-check-circle text-warning"></i> Comfortable Travel & Hotels</li>
+          <li class="mb-2"><i class="bi bi-check-circle text-warning"></i> 24/7 Customer Support</li>
+        </ul>
 
-        <a href="#" class="btn btn-warning fw-bold mt-2">Read More</a>
+        <a href="#" class="btn btn-warning px-4 fw-bold shadow-sm">Read More</a>
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-6 text-center">
+        <div class="image-box">
+          <img src="images/banner.jpg" class="img-fluid rounded-4 shadow-lg" alt="Char Dham Yatra">
+        </div>
       </div>
 
     </div>
   </div>
 </section>
+<style>
+    .about-section {
+  background: linear-gradient(135deg, #fffdf8, #f7f7f7);
+}
+
+.image-box img {
+  transition: 0.4s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+}
+
+.about-section ul li {
+  font-weight: 500;
+}
+
+</style>
 
 <!-- Single Max Van Services -->
-<section class="py-5 bg-light">
+<section class="py-5 services-section">
   <div class="container text-center">
 
-    <h2 class="fw-bold mb-3">Our Max Van Services</h2>
-    <p class="text-muted mb-5">Professional Max Traveller service for Char Dham & Uttarakhand travel</p>
+    <span class="badge bg-warning text-dark mb-2">Our Services</span>
+    <h2 class="fw-bold mb-2">Our Max Van Services</h2>
+    <p class="text-muted mb-5">
+      Professional Max Traveller service for Char Dham & Uttarakhand travel
+    </p>
 
     <div class="row g-4">
 
-      <!-- Service 1 -->
+      <!-- Service Card -->
       <div class="col-md-4">
-        <div class="card shadow border-0 h-100">
-          <div class="card-body">
-            <div class="fs-1 mb-3">🚐</div>
-            <h5 class="fw-bold">Char Dham Max Van Service</h5>
-            <p class="text-muted">Safe and comfortable Max Van service for full Char Dham Yatra.</p>
-          </div>
+        <div class="service-card h-100">
+          <div class="service-icon">🚐</div>
+          <h5 class="fw-bold mt-3">Char Dham Max Van Service</h5>
+          <p class="text-muted">
+            Safe and comfortable Max Van service for full Char Dham Yatra.
+          </p>
         </div>
       </div>
 
-      <!-- Service 2 -->
       <div class="col-md-4">
-        <div class="card shadow border-0 h-100">
-          <div class="card-body">
-            <div class="fs-1 mb-3">👨‍👩‍👧‍👦</div>
-            <h5 class="fw-bold">Family & Group Travel</h5>
-            <p class="text-muted">Ideal Max Traveller for family trips and group pilgrimages.</p>
-          </div>
+        <div class="service-card h-100">
+          <div class="service-icon">👨‍👩‍👧‍👦</div>
+          <h5 class="fw-bold mt-3">Family & Group Travel</h5>
+          <p class="text-muted">
+            Ideal Max Traveller for family trips and group pilgrimages.
+          </p>
         </div>
       </div>
 
-      <!-- Service 3 -->
       <div class="col-md-4">
-        <div class="card shadow border-0 h-100">
-          <div class="card-body">
-            <div class="fs-1 mb-3">🛣️</div>
-            <h5 class="fw-bold">Long Distance Travel</h5>
-            <p class="text-muted">Reliable Max Van for long-distance & hill route travel.</p>
-          </div>
+        <div class="service-card h-100">
+          <div class="service-icon">🛣️</div>
+          <h5 class="fw-bold mt-3">Long Distance Travel</h5>
+          <p class="text-muted">
+            Reliable Max Van for long-distance & hill route travel.
+          </p>
         </div>
       </div>
 
-      <!-- Service 4 -->
       <div class="col-md-4">
-        <div class="card shadow border-0 h-100">
-          <div class="card-body">
-            <div class="fs-1 mb-3">❄️</div>
-            <h5 class="fw-bold">AC Comfortable Max Traveller</h5>
-            <p class="text-muted">Fully AC Max Van with comfortable seating & smooth ride.</p>
-          </div>
+        <div class="service-card h-100">
+          <div class="service-icon">❄️</div>
+          <h5 class="fw-bold mt-3">AC Comfortable Max Traveller</h5>
+          <p class="text-muted">
+            Fully AC Max Van with comfortable seating & smooth ride.
+          </p>
         </div>
       </div>
 
-      <!-- Service 5 -->
       <div class="col-md-4">
-        <div class="card shadow border-0 h-100">
-          <div class="card-body">
-            <div class="fs-1 mb-3">🧳</div>
-            <h5 class="fw-bold">Spacious Luggage Space</h5>
-            <p class="text-muted">Enough luggage space for yatris and long journey travel.</p>
-          </div>
+        <div class="service-card h-100">
+          <div class="service-icon">🧳</div>
+          <h5 class="fw-bold mt-3">Spacious Luggage Space</h5>
+          <p class="text-muted">
+            Enough luggage space for yatris and long journey travel.
+          </p>
         </div>
       </div>
 
-      <!-- Service 6 -->
       <div class="col-md-4">
-        <div class="card shadow border-0 h-100">
-          <div class="card-body">
-            <div class="fs-1 mb-3">🙏</div>
-            <h5 class="fw-bold">Experienced Hill Driver</h5>
-            <p class="text-muted">Trusted and experienced driver for Char Dham & mountain roads.</p>
-          </div>
+        <div class="service-card h-100">
+          <div class="service-icon">🙏</div>
+          <h5 class="fw-bold mt-3">Experienced Hill Driver</h5>
+          <p class="text-muted">
+            Trusted and experienced driver for Char Dham & mountain roads.
+          </p>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+<style>
+    .services-section {
+  background: linear-gradient(135deg, #fffdf7, #f8f9fa);
+}
+
+.service-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.service-icon {
+  font-size: 45px;
+  background: #fff6dd;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+</style>
 
 
 <!-- Char Dham Section -->
@@ -322,225 +374,279 @@
 
 
 <!-- Yamunotri Section -->
-<section class="py-5 bg-light" id="yamunotri">
+<section class="py-5 yamunotri-section" id="yamunotri">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center g-5">
 
-      <!-- Image -->
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="images/banner.jpg" 
-             class="img-fluid rounded shadow" 
-             alt="Yamunotri Temple">
+        <!-- Image -->
+      <div class="col-md-6 order-1 order-md-2 text-center">
+        <div class="yamunotri-img-box">
+          <img src="images/banner.jpg" class="img-fluid rounded-4 shadow-lg" alt="Yamunotri Temple">
+        </div>
       </div>
 
       <!-- Content -->
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-3">Yamunotri</h2>
-        <p class="text-muted">
-          Yamunotri is the source of the sacred Yamuna River and one of the four Char Dham pilgrimage sites in Uttarakhand. 
-          It is surrounded by snow-capped peaks, hot springs, and pristine natural beauty. Pilgrims visit to seek spiritual blessings and enjoy the serene landscape.
+      <div class="col-md-6 order-2 order-md-1">
+        <span class="badge bg-warning text-dark mb-2">Char Dham</span>
+
+        <h2 class="fw-bold mb-3">
+          Yamunotri Temple <span class="text-warning">Pilgrimage</span>
+        </h2>
+
+        <p class="text-muted mb-3">
+          Yamunotri is the sacred source of the Yamuna River and one of the four holy Char Dham sites in Uttarakhand. 
+          Surrounded by snow-covered peaks, hot springs, and divine serenity, it is a place of deep spiritual energy.
         </p>
 
-        <ul class="list-unstyled text-muted mb-3">
-          <li>🌄 Scenic Himalayan views</li>
-          <li>♨️ Hot springs like Surya Kund & Gauri Kund</li>
-          <li>🕉️ Spiritual Char Dham experience</li>
-          <li>🚐 Accessible via Max Van / road travel</li>
+        <ul class="yamunotri-list mb-4">
+          <li><i class="bi bi-geo-alt-fill text-warning"></i> Scenic Himalayan mountain views</li>
+          <li><i class="bi bi-droplet-half text-warning"></i> Hot springs: Surya Kund & Gauri Kund</li>
+          <li><i class="bi bi-peace-fill text-warning"></i> Spiritual Char Dham experience</li>
+          <li><i class="bi bi-truck text-warning"></i> Easy access via Max Van & road travel</li>
         </ul>
 
-        <a href="#booking" class="btn btn-warning btn-lg fw-bold">Book Now</a>
+        <a href="#booking" class="btn btn-warning btn-lg fw-bold shadow-sm">
+          Book Yamunotri Trip
+        </a>
       </div>
+
+      
 
     </div>
   </div>
 </section>
 
+
 <style>
-#yamunotri img {
-  max-height: 400px;
+    .yamunotri-section {
+  background: linear-gradient(135deg, #fffdf7, #f9fafb);
+}
+
+.yamunotri-img-box img {
+  max-height: 420px;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: 0.4s ease;
 }
 
-#yamunotri img:hover {
-  transform: scale(1.05);
+.yamunotri-img-box img:hover {
+  transform: scale(1.06);
 }
 
-#yamunotri .btn-warning {
-  transition: 0.3s;
+.yamunotri-list {
+  list-style: none;
+  padding-left: 0;
 }
 
-#yamunotri .btn-warning:hover {
-  background-color: #eab308;
+.yamunotri-list li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.btn-warning:hover {
   transform: translateY(-2px);
 }
 </style>
 
 <!-- Gangotri Section -->
-<section class="py-5" id="gangotri">
+<section class="py-5 gangotri-section" id="gangotri">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center g-5">
 
       <!-- Image -->
-      <div class="col-md-6 mb-4 mb-md-0 order-md-2">
-        <img src="images/banner.jpg" 
-             class="img-fluid rounded shadow" 
-             alt="Gangotri Temple">
+      <div class="col-md-6 order-1 order-md-2 text-center">
+        <div class="gangotri-img-box">
+          <img src="images/banner.jpg" class="img-fluid rounded-4 shadow-lg" alt="Gangotri Temple">
+        </div>
       </div>
 
       <!-- Content -->
-      <div class="col-md-6 order-md-1">
-        <h2 class="fw-bold mb-3">Gangotri</h2>
-        <p class="text-muted">
-          Gangotri is the origin of the sacred River Ganga and one of the four Char Dham pilgrimage sites. 
-          Nestled amidst the majestic Himalayan peaks, it is revered by devotees and trekkers alike for its spiritual significance and breathtaking natural beauty.
+      <div class="col-md-6 order-2 order-md-1">
+        <span class="badge bg-warning text-dark mb-2">Char Dham</span>
+
+        <h2 class="fw-bold mb-3">
+          Gangotri Temple <span class="text-warning">Pilgrimage</span>
+        </h2>
+
+        <p class="text-muted mb-3">
+          Gangotri is the sacred origin of the River Ganga and one of the four holy Char Dham pilgrimage destinations. 
+          Surrounded by majestic Himalayan peaks, it is revered for its divine aura, spiritual depth, and breathtaking natural scenery.
         </p>
 
-        <ul class="list-unstyled text-muted mb-3">
-          <li>🌄 Majestic Himalayan scenery</li>
-          <li>🕉️ Sacred Ganga River source</li>
-          <li>🚶 Trekking paths and spiritual trails</li>
-          <li>🚐 Accessible via Max Van / road travel</li>
+        <ul class="gangotri-list mb-4">
+          <li><i class="bi bi-mountain text-warning"></i> Majestic Himalayan mountain scenery</li>
+          <li><i class="bi bi-droplet text-warning"></i> Sacred origin of River Ganga</li>
+          <li><i class="bi bi-person-walking text-warning"></i> Trekking trails & spiritual paths</li>
+          <li><i class="bi bi-truck text-warning"></i> Easy travel via Max Van & road</li>
         </ul>
 
-        <a href="#booking" class="btn btn-warning btn-lg fw-bold">Book Now</a>
+        <a href="#booking" class="btn btn-warning btn-lg fw-bold shadow-sm">
+          Book Gangotri Trip
+        </a>
       </div>
 
     </div>
   </div>
 </section>
-
 <style>
-#gangotri img {
-  max-height: 400px;
+    .gangotri-section {
+  background: linear-gradient(135deg, #fdfcf7, #f9fafb);
+}
+
+.gangotri-img-box img {
+  max-height: 420px;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: 0.4s ease;
 }
 
-#gangotri img:hover {
-  transform: scale(1.05);
+.gangotri-img-box img:hover {
+  transform: scale(1.06);
 }
 
-#gangotri .btn-warning {
-  transition: 0.3s;
+.gangotri-list {
+  list-style: none;
+  padding-left: 0;
 }
 
-#gangotri .btn-warning:hover {
-  background-color: #eab308;
-  transform: translateY(-2px);
+.gangotri-list li {
+  margin-bottom: 10px;
+  font-weight: 500;
 }
+
 </style>
 
 <!-- Kedarnath Section -->
-<section class="py-5 bg-light" id="kedarnath">
+<section class="py-5 kedarnath-section" id="kedarnath">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center g-5">
 
       <!-- Image -->
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="images/banner.jpg" 
-             class="img-fluid rounded shadow" 
-             alt="Kedarnath Temple">
+      <div class="col-md-6 text-center order-1">
+        <div class="kedarnath-img-box">
+          <img src="images/banner.jpg" class="img-fluid rounded-4 shadow-lg" alt="Kedarnath Temple">
+        </div>
       </div>
 
       <!-- Content -->
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-3">Kedarnath</h2>
-        <p class="text-muted">
-          Kedarnath is one of the holiest shrines dedicated to Lord Shiva and a major Char Dham site. 
-          Located in the high Himalayas, it offers a spiritual pilgrimage amidst breathtaking landscapes, attracting devotees from all over India.
+      <div class="col-md-6 order-2">
+        <span class="badge bg-warning text-dark mb-2">Char Dham</span>
+
+        <h2 class="fw-bold mb-3">
+          Kedarnath Temple <span class="text-warning">Pilgrimage</span>
+        </h2>
+
+        <p class="text-muted mb-3">
+          Kedarnath is one of the holiest shrines dedicated to Lord Shiva and a sacred Char Dham destination. 
+          Nestled in the high Himalayas, it offers a divine spiritual journey amidst breathtaking mountain landscapes and deep religious significance.
         </p>
 
-        <ul class="list-unstyled text-muted mb-3">
-          <li>🕉️ Sacred Shiva Temple</li>
-          <li>🌄 Stunning Himalayan views</li>
-          <li>🚶 Trekking access from Gaurikund</li>
-          <li>🚐 Max Van accessible till Gaurikund</li>
+        <ul class="kedarnath-list mb-4">
+          <li><i class="bi bi-peace-fill text-warning"></i> Sacred Lord Shiva Temple</li>
+          <li><i class="bi bi-mountain text-warning"></i> Stunning Himalayan mountain views</li>
+          <li><i class="bi bi-person-walking text-warning"></i> Trekking route from Gaurikund</li>
+          <li><i class="bi bi-truck text-warning"></i> Max Van access till Gaurikund</li>
         </ul>
 
-        <a href="#booking" class="btn btn-warning btn-lg fw-bold">Book Now</a>
+        <a href="#booking" class="btn btn-warning btn-lg fw-bold shadow-sm">
+          Book Kedarnath Trip
+        </a>
       </div>
 
     </div>
   </div>
 </section>
-
 <style>
-#kedarnath img {
-  max-height: 400px;
+    .kedarnath-section {
+  background: linear-gradient(135deg, #fffdf7, #f9fafb);
+}
+
+.kedarnath-img-box img {
+  max-height: 420px;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: 0.4s ease;
 }
 
-#kedarnath img:hover {
-  transform: scale(1.05);
+.kedarnath-img-box img:hover {
+  transform: scale(1.06);
 }
 
-#kedarnath .btn-warning {
-  transition: 0.3s;
+.kedarnath-list {
+  list-style: none;
+  padding-left: 0;
 }
 
-#kedarnath .btn-warning:hover {
-  background-color: #eab308;
-  transform: translateY(-2px);
+.kedarnath-list li {
+  margin-bottom: 10px;
+  font-weight: 500;
 }
+
 </style>
 
 
 <!-- Badrinath Section -->
-<section class="py-5" id="badrinath">
+<section class="py-5 badrinath-section" id="badrinath">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center g-5">
 
       <!-- Image -->
-      <div class="col-md-6 mb-4 mb-md-0 order-md-2">
-        <img src="images/banner.jpg" 
-             class="img-fluid rounded shadow" 
-             alt="Badrinath Temple">
+      <div class="col-md-6 order-1 order-md-2 text-center">
+        <div class="badrinath-img-box">
+          <img src="images/banner.jpg" class="img-fluid rounded-4 shadow-lg" alt="Badrinath Temple">
+        </div>
       </div>
 
       <!-- Content -->
-      <div class="col-md-6 order-md-1">
-        <h2 class="fw-bold mb-3">Badrinath</h2>
-        <p class="text-muted">
-          Badrinath is one of the most revered Vishnu temples and a key Char Dham site. 
-          Situated between the Nar & Narayan peaks, it is visited by thousands of devotees seeking blessings and spiritual peace amidst the Himalayas.
+      <div class="col-md-6 order-2 order-md-1">
+        <span class="badge bg-warning text-dark mb-2">Char Dham</span>
+
+        <h2 class="fw-bold mb-3">
+          Badrinath Temple <span class="text-warning">Pilgrimage</span>
+        </h2>
+
+        <p class="text-muted mb-3">
+          Badrinath is one of the most sacred Vishnu temples and a revered Char Dham pilgrimage destination. 
+          Located between the Nar and Narayan peaks, it offers divine blessings, spiritual peace, and breathtaking Himalayan scenery.
         </p>
 
-        <ul class="list-unstyled text-muted mb-3">
-          <li>🕉️ Sacred Vishnu Temple</li>
-          <li>🌄 Located between Nar & Narayan peaks</li>
-          <li>🚶 Accessible via road and small trekking paths</li>
-          <li>🚐 Max Van travel supported till Badrinath</li>
+        <ul class="badrinath-list mb-4">
+          <li><i class="bi bi-peace-fill text-warning"></i> Sacred Vishnu Temple</li>
+          <li><i class="bi bi-mountain text-warning"></i> Located between Nar & Narayan peaks</li>
+          <li><i class="bi bi-signpost text-warning"></i> Easy access via road & short treks</li>
+          <li><i class="bi bi-truck text-warning"></i> Max Van travel supported till Badrinath</li>
         </ul>
 
-        <a href="#booking" class="btn btn-warning btn-lg fw-bold">Book Now</a>
+        <a href="#booking" class="btn btn-warning btn-lg fw-bold shadow-sm">
+          Book Badrinath Trip
+        </a>
       </div>
 
     </div>
   </div>
 </section>
-
 <style>
-#badrinath img {
-  max-height: 400px;
+    .badrinath-section {
+  background: linear-gradient(135deg, #fffdf7, #f9fafb);
+}
+
+.badrinath-img-box img {
+  max-height: 420px;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: 0.4s ease;
 }
 
-#badrinath img:hover {
-  transform: scale(1.05);
-
+.badrinath-img-box img:hover {
+  transform: scale(1.06);
 }
 
-#badrinath .btn-warning {
-  transition: 0.3s;
+.badrinath-list {
+  list-style: none;
+  padding-left: 0;
 }
 
-#badrinath .btn-warning:hover {
-  background-color: #eab308;
-  transform: translateY(-2px);
+.badrinath-list li {
+  margin-bottom: 10px;
+  font-weight: 500;
 }
+
 </style>
 
 
@@ -616,6 +722,58 @@
 
   </div>
 </section>
+<style>
+    .pricing-section {
+  background: linear-gradient(135deg, #fffdf7, #f9fafb);
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 18px;
+  padding: 35px 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.35s ease;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+}
+
+.pricing-card.featured {
+  border: 2px solid #facc15;
+  transform: scale(1.03);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #facc15;
+  color: #000;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.pricing-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.pricing-list li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.price small {
+  font-size: 14px;
+}
+</style>
 
 <!-- Booking Form Section -->
 <section class="py-5 bg-light">
