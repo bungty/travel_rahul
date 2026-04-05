@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedarnath Trip • 2026 | Premium Yatra</title>
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #c8102e;     /* Deep Shiva Red */
+            --accent: #f4a261;
+            --dark: #0f172a;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .display-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* HERO */
+        .hero-kedarnath {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.85)),
+                        url('https://source.unsplash.com/2000x1200/?kedarnath,temple,snow,himalayas') center/cover no-repeat fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero-kedarnath::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 220px;
+            background: linear-gradient(transparent, #f8f9fa);
+        }
+
+        .section-header {
+            position: relative;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .kedarnath-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(200, 16, 46, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .kedarnath-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(200, 16, 46, 0.25);
+        }
+
+        .timeline-dot {
+            width: 52px;
+            height: 52px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 0 0 8px rgba(200, 16, 46, 0.2);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fff, #f8f1eb);
+            border-left: 6px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO BANNER -->
+    <section class="hero-kedarnath text-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10 col-xl-8">
+                    <span class="badge bg-white text-dark px-4 py-2 mb-4 fs-6">One of 12 Jyotirlingas • 3,583 m</span>
+                    <h1 class="display-2 display-title fw-bold mb-3">Kedarnath Yatra 2026</h1>
+                    <p class="lead fs-2 mb-4">Abode of Lord Shiva in the Himalayas</p>
+                    <p class="col-lg-9 mx-auto mb-5 fs-5">
+                        Experience the divine darshan of Lord Kedarnath. Helicopter | Trek | Luxury Camps
+                    </p>
+                    
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                            <i class="fas fa-helicopter me-2"></i> Book Helicopter Package
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">
+                            <i class="fas fa-mountain me-2"></i> Trek Package
+                        </a>
+                    </div>
+
+                    <div class="mt-5 pt-4 border-top border-white border-opacity-30">
+                        <div class="row text-center g-4">
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-0">16 km</h3>
+                                <small>Trek from Gaurikund</small>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-0">7–10 hrs</h3>
+                                <small>Helicopter Darshan</small>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-0">May 2026</h3>
+                                <small>Temple Opening</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK FACTS -->
+    <section class="py-4 bg-white shadow-sm">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 border-end">
+                    <i class="fas fa-mountain fa-2x text-danger mb-2"></i>
+                    <h5 class="fw-bold">3,583 Meters</h5>
+                    <p class="mb-0 text-muted small">Highest among Char Dham</p>
+                </div>
+                <div class="col-md-3 col-6 border-end">
+                    <i class="fas fa-pray fa-2x text-danger mb-2"></i>
+                    <h5 class="fw-bold">Jyotirlinga #3</h5>
+                    <p class="mb-0 text-muted small">Lord Shiva’s divine light</p>
+                </div>
+                <div class="col-md-3 col-6 border-end">
+                    <i class="fas fa-snowflake fa-2x text-danger mb-2"></i>
+                    <h5 class="fw-bold">Mandakini River</h5>
+                    <p class="mb-0 text-muted small">Flows beside the temple</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <i class="fas fa-clock fa-2x text-danger mb-2"></i>
+                    <h5 class="fw-bold">Open May–Nov</h5>
+                    <p class="mb-0 text-muted small">2026 season confirmed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT KEDARNATH -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="badge bg-danger text-white px-3 py-2">3rd Dham of Char Yatra</span>
+                    <h2 class="section-header display-5 display-title fw-bold mt-3">The Majestic Kedarnath Temple</h2>
+                    <p class="lead text-muted">
+                        Nestled in the Garhwal Himalayas, Kedarnath is one of the holiest shrines dedicated to Lord Shiva. 
+                        Believed to have been built by the Pandavas, the temple stands at 3,583 meters and is only accessible by trek or helicopter.
+                    </p>
+                    <div class="highlight-box p-4 rounded-3 mt-4">
+                        <p class="mb-0 fw-medium">
+                            <i class="fas fa-quote-left me-2"></i>
+                            “The darshan of Kedarnath Ji fills the heart with immense peace and devotion. 
+                            It is not just a temple — it is a divine experience.” 
+                            <strong>— Thousands of devotees every year</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://source.unsplash.com/800x600/?kedarnath,temple,closeup" class="img-fluid rounded-4 shadow" alt="Kedarnath Temple">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW TO REACH -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-header display-5 display-title text-center mb-5">How to Reach Kedarnath</h2>
+            
+            <div class="row g-4">
+                <!-- Trek Option -->
+                <div class="col-lg-4">
+                    <div class="kedarnath-card h-100">
+                        <div class="card-body p-4">
+                            <span class="badge bg-dark text-white">Traditional Route</span>
+                            <h4 class="fw-bold mt-3">16 km Trek from Gaurikund</h4>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3"><i class="fas fa-hiking text-danger me-3"></i>Moderate to difficult trek</li>
+                                <li class="mb-3"><i class="fas fa-clock text-danger me-3"></i>6–8 hours one way</li>
+                                <li class="mb-3"><i class="fas fa-mug-hot text-danger me-3"></i>Pony / Palki available</li>
+                                <li><i class="fas fa-first-aid text-danger me-3"></i>Medical facilities en-route</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-danger w-100 mt-3">Choose Trek Package →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Helicopter Option -->
+                <div class="col-lg-4">
+                    <div class="kedarnath-card h-100">
+                        <div class="card-body p-4">
+                            <span class="badge bg-danger text-white">Most Popular</span>
+                            <h4 class="fw-bold mt-3">Helicopter Darshan</h4>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3"><i class="fas fa-helicopter text-danger me-3"></i>Phata / Guptkashi → Kedarnath</li>
+                                <li class="mb-3"><i class="fas fa-clock text-danger me-3"></i>7–10 minutes flight</li>
+                                <li class="mb-3"><i class="fas fa-star text-danger me-3"></i>VIP same-day return</li>
+                                <li><i class="fas fa-shield-alt text-danger me-3"></i>Weather dependent</li>
+                            </ul>
+                            <a href="#" class="btn btn-danger w-100 mt-3">Book Helicopter Now →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Road + Trek -->
+                <div class="col-lg-4">
+                    <div class="kedarnath-card h-100">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success text-white">Budget Friendly</span>
+                            <h4 class="fw-bold mt-3">Road to Gaurikund + Trek</h4>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3"><i class="fas fa-bus text-danger me-3"></i>Haridwar / Rishikesh → Gaurikund</li>
+                                <li class="mb-3"><i class="fas fa-mountain text-danger me-3"></i>16 km trek / pony</li>
+                                <li class="mb-3"><i class="fas fa-home text-danger me-3"></i>Stay at Kedarnath or Gaurikund</li>
+                                <li><i class="fas fa-calendar text-danger me-3"></i>3–4 days total</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-success w-100 mt-3">View Road Packages →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAMPLE ITINERARY -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-header display-5 display-title text-center mb-5">5-Day Kedarnath Premium Itinerary</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex align-items-start">
+                            <div class="timeline-dot flex-shrink-0">1</div>
+                            <div class="ms-4">
+                                <h5>Day 1 – Haridwar / Rishikesh → Guptkashi</h5>
+                                <p class="text-muted mb-0">Drive through scenic hills • Overnight at luxury resort</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="timeline-dot flex-shrink-0">2</div>
+                            <div class="ms-4">
+                                <h5>Day 2 – Guptkashi → Kedarnath (Helicopter / Trek)</h5>
+                                <p class="text-muted mb-0">Darshan of Lord Kedarnath • Evening aarti</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="timeline-dot flex-shrink-0">3</div>
+                            <div class="ms-4">
+                                <h5>Day 3 – Kedarnath Exploration</h5>
+                                <p class="text-muted mb-0">Visit Chorabari Glacier, Vasuki Tal & Bhairavnath Temple</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="timeline-dot flex-shrink-0">4</div>
+                            <div class="ms-4">
+                                <h5>Day 4 – Kedarnath → Guptkashi</h5>
+                                <p class="text-muted mb-0">Return flight / trek • Relax at resort</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="timeline-dot flex-shrink-0">5</div>
+                            <div class="ms-4">
+                                <h5>Day 5 – Guptkashi → Haridwar</h5>
+                                <p class="text-muted mb-0">Drop with lifelong memories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="display-5 display-title mb-3">Don’t miss the divine blessings of Lord Kedarnath</h2>
+            <p class="lead mb-4">Limited seats for 2026 • Book before April for best rates</p>
+            <a href="#" class="btn btn-danger btn-lg px-5 py-3 fw-bold">Reserve Your Kedarnath Trip Now</a>
+            <p class="mt-4 small opacity-75">✅ Helicopter • ✅ Luxury Stay • ✅ Expert Guides • ✅ Puja Arrangements</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

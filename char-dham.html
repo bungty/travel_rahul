@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Char Dham Yatra 2026 • Official</title>
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #e6392b;
+            --accent: #f4a261;
+            --dark: #0f172a;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .display-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .navbar-custom {
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s ease;
+            border-bottom: 1px solid rgba(250, 204, 21, 0.15);
+        }
+
+        .navbar-custom.scrolled {
+            background: rgba(15, 23, 42, 0.98);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .navbar-brand img {
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.05);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: #e2e8f0;
+            position: relative;
+            padding: 8px 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2.5px;
+            background: linear-gradient(90deg, #facc15, #eab308);
+            transition: all 0.4s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 70%;
+        }
+
+        .nav-link:hover {
+            color: #facc15;
+            transform: translateY(-1px);
+        }
+
+        .nav-link.active {
+            color: #facc15 !important;
+            font-weight: 600;
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #facc15, #eab308);
+            border: none;
+            color: #1e2937;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            box-shadow: 0 6px 20px rgba(250, 204, 21, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-warning:hover {
+            background: linear-gradient(135deg, #eab308, #ca8a04);
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 10px 25px rgba(250, 204, 21, 0.5);
+        }
+
+        .hero-char-dham {
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)),
+                        url('https://source.unsplash.com/2000x1200/?himalayas,snow,kedarnath,badrinath') center/cover no-repeat fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero-char-dham::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 220px;
+            background: linear-gradient(transparent, #f8f9fa);
+        }
+
+        .section-header {
+            position: relative;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dham-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(230, 57, 43, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .dham-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(230, 57, 43, 0.25);
+        }
+
+        .dham-card img {
+            transition: transform 0.5s ease;
+        }
+        
+        .dham-card:hover img {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <img src="images/logo.png" width="220" alt="Char Dham Max Van" class="me-2">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="char-dham.html">Char Dham</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-warning btn-lg fw-bold px-5 py-2 shadow-sm" href="contact.html">
+                            Book Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-char-dham text-white">
+        <div class="container pt-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10 col-xl-8 pt-5">
+                    <span class="badge bg-white text-dark px-4 py-2 mb-4 fs-6">Uttarakhand • 2026 Season</span>
+                    <h1 class="display-1 display-title fw-bold mb-3">Char Dham Yatra</h1>
+                    <p class="lead fs-3 mb-4">Yamunotri • Gangotri • Kedarnath • Badrinath</p>
+                    <p class="col-lg-8 mx-auto mb-5 fs-5">
+                        Safe & Comfortable Van Packages • All Types of Tempo Travellers & SUVs Available
+                    </p>
+                    
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                            Start Your Journey
+                        </a>
+                        <a href="packages.html" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">
+                            View Packages
+                        </a>
+                    </div>
+
+                    <div class="mt-5 pt-4 border-top border-white border-opacity-30">
+                        <div class="row text-center g-4">
+                            <div class="col-3">
+                                <h4 class="fw-bold mb-0">1,607 km</h4>
+                                <small>Full Circuit</small>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="fw-bold mb-0">May – Oct</h4>
+                                <small>2026 Season</small>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="fw-bold mb-0">4 Dhams</h4>
+                                <small>One Divine Journey</small>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="fw-bold mb-0">10,000+</h4>
+                                <small>Happy Yatris</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE FOUR DHAMS -->
+    <section class="py-5 bg-white" id="dhams">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-danger text-white px-3 py-2">Sacred Circuit</span>
+                <h2 class="section-header display-5 display-title fw-bold d-inline-block mx-auto">The Four Holy Abodes</h2>
+                <p class="lead text-muted">Visit all four in the traditional order</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <a href="yamunotri-trip.html" class="text-decoration-none">
+                        <div class="dham-card h-100">
+                            <img src="https://source.unsplash.com/800x600/?yamunotri,temple,himalayas" class="card-img-top" alt="Yamunotri">
+                            <div class="card-body p-4">
+                                <span class="badge bg-warning text-dark">1st Dham</span>
+                                <h4 class="fw-bold mt-3">Yamunotri</h4>
+                                <p class="text-muted">Source of River Yamuna • Goddess Yamuna</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="gangotri-trip.html" class="text-decoration-none">
+                        <div class="dham-card h-100">
+                            <img src="https://source.unsplash.com/800x600/?gangotri,ganga,himalayas" class="card-img-top" alt="Gangotri">
+                            <div class="card-body p-4">
+                                <span class="badge bg-primary text-white">2nd Dham</span>
+                                <h4 class="fw-bold mt-3">Gangotri</h4>
+                                <p class="text-muted">Origin of Holy Ganga • Goddess Ganga</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="kedarnath-trip.html" class="text-decoration-none">
+                        <div class="dham-card h-100">
+                            <img src="https://source.unsplash.com/800x600/?kedarnath,shiva,himalayas" class="card-img-top" alt="Kedarnath">
+                            <div class="card-body p-4">
+                                <span class="badge bg-danger text-white">3rd Dham</span>
+                                <h4 class="fw-bold mt-3">Kedarnath</h4>
+                                <p class="text-muted">Lord Shiva’s Jyotirlinga • 3,583 m</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="badrinath-trip.html" class="text-decoration-none">
+                        <div class="dham-card h-100">
+                            <img src="https://source.unsplash.com/800x600/?badrinath,vishnu,himalayas" class="card-img-top" alt="Badrinath">
+                            <div class="card-body p-4">
+                                <span class="badge bg-success text-white">4th Dham</span>
+                                <h4 class="fw-bold mt-3">Badrinath</h4>
+                                <p class="text-muted">Abode of Lord Vishnu • Final Dham</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US / HIGHLIGHTS -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-header display-5 display-title fw-bold mb-4">Why Travel With Us?</h2>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-van-shuttle fa-3x text-danger me-4"></i>
+                                <div>
+                                    <h5>All Types of Vans</h5>
+                                    <p class="text-muted mb-0">Tempo Traveller • Innova Crysta • Max Van • Bolero</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-shield-alt fa-3x text-danger me-4"></i>
+                                <div>
+                                    <h5>Government Approved</h5>
+                                    <p class="text-muted mb-0">Licensed & Insured Operator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-hotel fa-3x text-danger me-4"></i>
+                                <div>
+                                    <h5>Comfortable Stays</h5>
+                                    <p class="text-muted mb-0">Handpicked hotels near all Dhams</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-users fa-3x text-danger me-4"></i>
+                                <div>
+                                    <h5>Experienced Drivers</h5>
+                                    <p class="text-muted mb-0">Himalaya expert drivers + 24×7 support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://source.unsplash.com/800x600/?pilgrims,himalayas,group,van" class="img-fluid rounded-4 shadow" alt="Char Dham Yatra by Van">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="section-header display-5 display-title fw-bold mb-5">Plan Your Yatra</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-auto">
+                    <a href="packages.html" class="btn btn-outline-danger btn-lg px-4 py-3 mx-2">
+                        <i class="fas fa-van-shuttle me-2"></i> All Van Packages
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="kedarnath-trip.html" class="btn btn-outline-danger btn-lg px-4 py-3 mx-2">
+                        <i class="fas fa-mountain me-2"></i> Kedarnath Van Package
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="badrinath-trip.html" class="btn btn-outline-danger btn-lg px-4 py-3 mx-2">
+                        <i class="fas fa-pray me-2"></i> Badrinath Van Package
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="local-travel.html" class="btn btn-outline-danger btn-lg px-4 py-3 mx-2">
+                        <i class="fas fa-car me-2"></i> Local Travel
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="contact.html" class="btn btn-danger btn-lg px-4 py-3 mx-2">
+                        <i class="fas fa-phone me-2"></i> Talk to Expert
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="display-5 display-title mb-3">Your Divine Journey Begins Here</h2>
+            <p class="lead mb-4">Limited seats for 2026 season. Book early for best dates & rates.</p>
+            <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 fw-bold">Reserve Your Van Package Now</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section text-white">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <img src="images/logo.png" width="180" alt="Char Dham Max Van">
+                    <p class="text-light opacity-75 mt-3">
+                        Trusted van service provider for Char Dham Yatra. 
+                        We offer Tempo Traveller, Innova Crysta, Max Van & Bolero for safe and comfortable pilgrimage.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Our Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="char-dham.html">Char Dham Yatra by Van</a></li>
+                        <li><a href="kedarnath-trip.html">Kedarnath Van Package</a></li>
+                        <li><a href="badrinath-trip.html">Badrinath Van Package</a></li>
+                        <li><a href="local-travel.html">Local Travel</a></li>
+                        <li><a href="outstation-travel.html">Outstation Travel</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <p class="mb-1">📍 Uttarakhand, India</p>
+                    <p class="mb-1">📞 +91 XXXXXXXXXX</p>
+                    <p class="mb-3">✉️ yourmail@gmail.com</p>
+
+                    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn btn-success btn-sm fw-bold">
+                        💬 Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="d-flex flex-column flex-md-row justify-content-between text-light opacity-75 small">
+                <span>© 2026 Char Dham Max Van. All Rights Reserved.</span>
+                <span>Safe • Comfortable • Reliable Van Travel</span>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+    .footer-section {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+    .footer-links a {
+        color: #cbd5e1;
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+    .footer-links a:hover {
+        color: #facc15;
+        padding-left: 5px;
+    }
+    </style>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

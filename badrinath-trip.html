@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badrinath Trip • 2026 | Premium Yatra</title>
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts - Same premium style -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0d7c6e;     /* Vishnu Teal-Green - Premium & Divine */
+            --accent: #f4a261;
+            --dark: #0f172a;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .display-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+      
+        .hero-badrinath {
+            background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.85)),
+                        url('https://source.unsplash.com/2000x1200/?badrinath,temple,himalayas,snow') center/cover no-repeat fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero-badrinath::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 220px;
+            background: linear-gradient(transparent, #f8f9fa);
+        }
+
+        .section-header {
+            position: relative;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .badrinath-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(13, 124, 110, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .badrinath-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(13, 124, 110, 0.25);
+        }
+
+        .timeline-dot {
+            width: 52px;
+            height: 52px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 0 0 8px rgba(13, 124, 110, 0.2);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f9f7, #e6f4f1);
+            border-left: 6px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO BANNER -->
+    <section class="hero-badrinath text-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10 col-xl-8">
+                    <span class="badge bg-white text-dark px-4 py-2 mb-4 fs-6">4th & Final Dham • Abode of Lord Vishnu</span>
+                    <h1 class="display-2 display-title fw-bold mb-3">Badrinath Yatra 2026</h1>
+                    <p class="lead fs-2 mb-4">Divine Home of Lord Badrinarayan</p>
+                    <p class="col-lg-9 mx-auto mb-5 fs-5">
+                        Complete your Char Dham journey with the blessings of Lord Vishnu on the banks of the Alaknanda River
+                    </p>
+                    
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                            <i class="fas fa-road me-2"></i> Road + VIP Package
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">
+                            <i class="fas fa-helicopter me-2"></i> Helicopter Darshan
+                        </a>
+                    </div>
+
+                    <div class="mt-5 pt-4 border-top border-white border-opacity-30">
+                        <div class="row text-center g-4">
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-0">3,133 m</h3>
+                                <small>Altitude</small>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-0">Alaknanda River</h3>
+                                <small>Holy Banks</small>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-0">May 2026</h3>
+                                <small>Temple Opening</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK FACTS -->
+    <section class="py-4 bg-white shadow-sm">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 border-end">
+                    <i class="fas fa-mountain fa-2x text-primary mb-2"></i>
+                    <h5 class="fw-bold">3,133 Meters</h5>
+                    <p class="mb-0 text-muted small">One of the highest Char Dham shrines</p>
+                </div>
+                <div class="col-md-3 col-6 border-end">
+                    <i class="fas fa-pray fa-2x text-primary mb-2"></i>
+                    <h5 class="fw-bold">Lord Vishnu</h5>
+                    <p class="mb-0 text-muted small">Badrinarayan Form</p>
+                </div>
+                <div class="col-md-3 col-6 border-end">
+                    <i class="fas fa-hot-tub fa-2x text-primary mb-2"></i>
+                    <h5 class="fw-bold">Tapt Kund</h5>
+                    <p class="mb-0 text-muted small">Natural Hot Springs</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <i class="fas fa-clock fa-2x text-primary mb-2"></i>
+                    <h5 class="fw-bold">May – Nov</h5>
+                    <p class="mb-0 text-muted small">2026 Season</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT BADRINATH -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="badge bg-primary text-white px-3 py-2">Final Destination of Char Dham Yatra</span>
+                    <h2 class="section-header display-5 display-title fw-bold mt-3">The Sacred Abode of Lord Badrinath</h2>
+                    <p class="lead text-muted">
+                        Nestled in the Garhwal Himalayas on the banks of the Alaknanda River, Badrinath Temple is one of the most revered Vishnu temples in India. 
+                        Established by Adi Shankaracharya, it marks the culmination of the holy Char Dham Yatra.
+                    </p>
+                    <div class="highlight-box p-4 rounded-3 mt-4">
+                        <p class="mb-0 fw-medium">
+                            <i class="fas fa-quote-left me-2"></i>
+                            “A single darshan at Badrinath washes away the sins of lifetimes and fills the soul with eternal peace.” 
+                            <strong>— Ancient Hindu scriptures</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://source.unsplash.com/800x600/?badrinath,temple,closeup,himalayas" class="img-fluid rounded-4 shadow" alt="Badrinath Temple">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW TO REACH -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-header display-5 display-title text-center mb-5">How to Reach Badrinath</h2>
+            
+            <div class="row g-4">
+                <!-- Road Option -->
+                <div class="col-lg-4">
+                    <div class="badrinath-card h-100">
+                        <div class="card-body p-4">
+                            <span class="badge bg-dark text-white">Most Popular</span>
+                            <h4 class="fw-bold mt-3">Road Journey from Haridwar</h4>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3"><i class="fas fa-bus text-primary me-3"></i>Haridwar / Rishikesh → Badrinath (≈ 320 km)</li>
+                                <li class="mb-3"><i class="fas fa-clock text-primary me-3"></i>10–12 hours scenic drive</li>
+                                <li class="mb-3"><i class="fas fa-mountain text-primary me-3"></i>Via Joshimath &amp; Mana Village</li>
+                                <li><i class="fas fa-home text-primary me-3"></i>Luxury resorts available</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary w-100 mt-3">Choose Road Package →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Helicopter Option -->
+                <div class="col-lg-4">
+                    <div class="badrinath-card h-100">
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary text-white">Fastest &amp; Luxury</span>
+                            <h4 class="fw-bold mt-3">Helicopter Darshan</h4>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3"><i class="fas fa-helicopter text-primary me-3"></i>Gauchar / Joshimath → Badrinath</li>
+                                <li class="mb-3"><i class="fas fa-clock text-primary me-3"></i>20–30 minutes flight</li>
+                                <li class="mb-3"><i class="fas fa-star text-primary me-3"></i>Same-day return option</li>
+                                <li><i class="fas fa-shield-alt text-primary me-3"></i>Weather dependent</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100 mt-3">Book Helicopter Now →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Combo with Kedarnath -->
+                <div class="col-lg-4">
+                    <div class="badrinath-card h-100">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success text-white">Char Dham Combo</span>
+                            <h4 class="fw-bold mt-3">Kedarnath + Badrinath</h4>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3"><i class="fas fa-link text-primary me-3"></i>Seamless 2-Dham package</li>
+                                <li class="mb-3"><i class="fas fa-calendar text-primary me-3"></i>7–9 days total</li>
+                                <li class="mb-3"><i class="fas fa-pray text-primary me-3"></i>Special Vishnu-Shiva puja</li>
+                                <li><i class="fas fa-gem text-primary me-3"></i>Expert guides &amp; stays</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-success w-100 mt-3">View Combo Packages →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAMPLE ITINERARY -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-header display-5 display-title text-center mb-5">5-Day Badrinath Premium Itinerary</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex align-items-start">
+                            <div class="timeline-dot flex-shrink-0">1</div>
+                            <div class="ms-4">
+                                <h5>Day 1 – Haridwar / Rishikesh → Joshimath</h5>
+                                <p class="text-muted mb-0">Scenic drive • Overnight at luxury mountain resort</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="timeline-dot flex-shrink-0">2</div>
+                            <div class="ms-4">
+                                <h5>Day 2 – Joshimath → Badrinath</h5>
+                                <p class="text-muted mb-0">Road / Helicopter • Evening darshan of Lord Badrinarayan</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="timeline-dot flex-shrink-0">3</div>
+                            <div class="ms-4">
+                                <h5>Day 3 – Badrinath Exploration</h5>
+                                <p class="text-muted mb-0">Tapt Kund bath • Mana Village • Vyas Gufa • Vasudhara Falls</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="timeline-dot flex-shrink-0">4</div>
+                            <div class="ms-4">
+                                <h5>Day 4 – Badrinath → Joshimath</h5>
+                                <p class="text-muted mb-0">Return journey • Relax with Himalayan views</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="timeline-dot flex-shrink-0">5</div>
+                            <div class="ms-4">
+                                <h5>Day 5 – Joshimath → Haridwar</h5>
+                                <p class="text-muted mb-0">Drop with divine blessings &amp; unforgettable memories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="display-5 display-title mb-3">Complete your Char Dham with the blessings of Lord Vishnu</h2>
+            <p class="lead mb-4">Limited premium seats for 2026 season • Book early for best rates &amp; dates</p>
+            <a href="#" class="btn btn-primary btn-lg px-5 py-3 fw-bold">Reserve Your Badrinath Trip Now</a>
+            <p class="mt-4 small opacity-75">✅ Helicopter Option • ✅ Luxury Resorts • ✅ Special Puja • ✅ Expert Guides • ✅ Tapt Kund Experience</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

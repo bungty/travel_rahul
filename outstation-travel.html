@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outstation Travel • Char Dham Yatra 2026</title>
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts - Same premium style -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #e6392b;     /* Char Dham signature color */
+            --accent: #f4a261;
+            --dark: #0f172a;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .display-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+ 
+        .hero-outstation {
+            background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.85)),
+                        url('https://source.unsplash.com/2000x1200/?flight,himalayas,delhi,airport') center/cover no-repeat fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero-outstation::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 220px;
+            background: linear-gradient(transparent, #f8f9fa);
+        }
+
+        .section-header {
+            position: relative;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .travel-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(230, 57, 43, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .travel-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(230, 57, 43, 0.25);
+        }
+
+        .icon-circle {
+            width: 68px;
+            height: 68px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .city-tag {
+            font-size: 0.85rem;
+            padding: 4px 12px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO BANNER -->
+    <section class="hero-outstation text-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10 col-xl-8">
+                    <span class="badge bg-white text-dark px-4 py-2 mb-4 fs-6">From Anywhere in India</span>
+                    <h1 class="display-2 display-title fw-bold mb-3">Outstation Travel</h1>
+                    <p class="lead fs-2 mb-4">Char Dham Yatra 2026</p>
+                    <p class="col-lg-9 mx-auto mb-5 fs-5">
+                        Flights • Trains • Buses • Private Cabs from Delhi, Mumbai, Bengaluru, Chennai &amp; all major cities to Haridwar / Rishikesh
+                    </p>
+                    
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                            <i class="fas fa-plane me-2"></i> Check Flight Deals
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">
+                            <i class="fas fa-train me-2"></i> Book Train Tickets
+                        </a>
+                    </div>
+
+                    <div class="mt-5 pt-4 border-top border-white border-opacity-30">
+                        <div class="row text-center g-4">
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-0">500+</h3>
+                                <small>Daily Flights &amp; Trains</small>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-0">12 hrs</h3>
+                                <small>Delhi to Haridwar</small>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold mb-0">May–Oct 2026</h3>
+                                <small>Peak Season</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAVEL FROM MAJOR CITIES -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-danger text-white px-3 py-2">From Your City</span>
+                <h2 class="section-header display-5 display-title fw-bold d-inline-block mx-auto">Outstation Travel Options</h2>
+                <p class="lead text-muted">Fastest &amp; most comfortable ways to reach the Char Dham starting point</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Delhi -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="travel-card h-100 p-4">
+                        <span class="city-tag badge bg-warning text-dark">Most Popular</span>
+                        <div class="icon-circle mx-auto mt-3"><i class="fas fa-plane"></i></div>
+                        <h4 class="fw-bold text-center">Delhi / NCR</h4>
+                        <p class="text-center text-muted small mb-3">Just 220 km • 5–6 hrs drive</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Flights to Dehradun (1 hr)</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Shatabdi / AC Trains to Haridwar</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Private AC Cabs / Volvo Buses</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-danger w-100 mt-auto">Book from Delhi →</a>
+                    </div>
+                </div>
+
+                <!-- Mumbai -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="travel-card h-100 p-4">
+                        <span class="city-tag badge bg-primary text-white">Direct Flights</span>
+                        <div class="icon-circle mx-auto mt-3"><i class="fas fa-plane"></i></div>
+                        <h4 class="fw-bold text-center">Mumbai</h4>
+                        <p class="text-center text-muted small mb-3">Direct flight to Dehradun</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 hrs 30 min flight</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Daily IndiGo, Air India, Vistara</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Connecting via Delhi also available</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-danger w-100 mt-auto">Book from Mumbai →</a>
+                    </div>
+                </div>
+
+                <!-- Bangalore -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="travel-card h-100 p-4">
+                        <span class="city-tag badge bg-info text-white">Non-Stop Flights</span>
+                        <div class="icon-circle mx-auto mt-3"><i class="fas fa-plane"></i></div>
+                        <h4 class="fw-bold text-center">Bengaluru</h4>
+                        <p class="text-center text-muted small mb-3">Direct flights available</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 hrs 45 min non-stop</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>IndiGo &amp; Akasa Air</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Train option also available</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-danger w-100 mt-auto">Book from Bengaluru →</a>
+                    </div>
+                </div>
+
+                <!-- Other Cities -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="travel-card h-100 p-4">
+                        <span class="city-tag badge bg-success text-white">All India</span>
+                        <div class="icon-circle mx-auto mt-3"><i class="fas fa-train"></i></div>
+                        <h4 class="fw-bold text-center">Chennai • Hyderabad • Kolkata • Ahmedabad</h4>
+                        <p class="text-center text-muted small mb-3">Best via Delhi / Dehradun</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Daily flights to Dehradun</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Fastest trains via Haridwar</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Private cab pick-up from airport</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-danger w-100 mt-auto">See All Cities →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-header display-5 display-title text-center mb-5">Outstation Travel Comparison</h2>
+            
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Mode</th>
+                            <th>From Major Cities</th>
+                            <th>Time</th>
+                            <th>Approx. Cost (per person)</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Flight</strong></td>
+                            <td>Delhi, Mumbai, Bengaluru, Chennai</td>
+                            <td>1 – 3 hours</td>
+                            <td>₹3,500 – ₹9,000</td>
+                            <td>Seniors, Families, Time-saving</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Train</strong></td>
+                            <td>All major cities</td>
+                            <td>6 – 36 hours</td>
+                            <td>₹1,200 – ₹4,500</td>
+                            <td>Budget travellers, Comfort lovers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Volvo / AC Bus</strong></td>
+                            <td>Delhi, Chandigarh, Jaipur</td>
+                            <td>6 – 12 hours</td>
+                            <td>₹1,800 – ₹3,200</td>
+                            <td>Groups, Economy</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Private Cab / Tempo Traveller</strong></td>
+                            <td>Delhi / NCR</td>
+                            <td>5 – 7 hours</td>
+                            <td>₹12,000 – ₹25,000 (full vehicle)</td>
+                            <td>Families, Groups, Luxury</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAVEL TIPS -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <h2 class="section-header display-5 display-title mb-4">Pro Tips for Outstation Yatris</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="fas fa-plane-departure fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5>Book Flights Early</h5>
+                                    <p class="text-muted">Dehradun (DED) &amp; Jolly Grant Airport get fully booked 3–4 months in advance during peak season.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="fas fa-train fa-2x text-danger me-3"></i>
+                                <div>
+                                    <h5>Train Booking Strategy</h5>
+                                    <p class="text-muted">Book Shatabdi / AC Express from Delhi to Haridwar. Tatkal opens 1 day before.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="fas fa-suitcase fa-2x text-warning me-3"></i>
+                                <div>
+                                    <h5>Luggage &amp; Packing</h5>
+                                    <p class="text-muted">Light woollens, raincoat, oxygen cylinder (if needed), and comfortable shoes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="fas fa-clock fa-2x text-success me-3"></i>
+                                <div>
+                                    <h5>Arrival Day Plan</h5>
+                                    <p class="text-muted">Reach Haridwar / Rishikesh one day before your Char Dham departure for rest &amp; acclimatization.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <div class="p-4 bg-light rounded-4 h-100">
+                        <h5 class="fw-bold mb-3">Recommended Arrival Airports / Stations</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-danger px-3 py-2">Jolly Grant Airport (Dehradun)</span>
+                            <span class="badge bg-primary px-3 py-2">Haridwar Railway Station</span>
+                            <span class="badge bg-success px-3 py-2">Rishikesh Railway Station</span>
+                            <span class="badge bg-warning text-dark px-3 py-2">Delhi IGI Airport + Cab</span>
+                        </div>
+                        <p class="mt-4 small text-muted">
+                            Our team provides complimentary pickup from Dehradun Airport / Haridwar Station for all premium packages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="display-5 display-title mb-3">Start your Char Dham journey from anywhere in India</h2>
+            <p class="lead mb-4">We arrange complete outstation + local travel + accommodation + darshan packages</p>
+            <a href="#" class="btn btn-light btn-lg px-5 py-3 fw-bold">Get Your Customized Outstation Plan</a>
+            <p class="mt-4 small opacity-75">✅ Best price guaranteed • ✅ Real-time availability • ✅ 24×7 travel support</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Char Dham Yatra • Premium Experience</title>
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts - Premium Feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #e6392b;
+            --accent: #f4a261;
+            --dark: #0f172a;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .display-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* HERO SECTION */
+        .hero-char-dham {
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)),
+                        url('https://source.unsplash.com/2000x1200/?himalayas,snow,kedarnath') center/cover no-repeat;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero-char-dham::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(transparent, #f8f9fa);
+        }
+
+        .section-header {
+            position: relative;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* PREMIUM CARD */
+        .dham-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(230, 57, 43, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%;
+        }
+        
+        .dham-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(230, 57, 43, 0.25);
+        }
+        
+        .dham-card .card-img-top {
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .dham-card:hover .card-img-top {
+            transform: scale(1.08);
+        }
+
+        .badge-dham {
+            font-size: 0.75rem;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        /* ROUTE TIMELINE */
+        .timeline {
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #e6392b, #f4a261);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-step {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .timeline-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .stats-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO BANNER - Expert Level -->
+    <section class="hero-char-dham text-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10 col-xl-8">
+                    <span class="badge bg-white text-dark px-4 py-2 mb-4">Uttarakhand • Since 2026</span>
+                    <h1 class="display-3 display-title fw-bold mb-3">Char Dham Yatra</h1>
+                    <p class="lead fs-3 mb-4">The Ultimate Himalayan Spiritual Journey</p>
+                    <p class="col-lg-8 mx-auto mb-5">
+                        Experience the divine circuit of Yamunotri • Gangotri • Kedarnath • Badrinath
+                    </p>
+                    
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#" class="btn btn-light btn-lg px-5 py-3 fw-semibold">
+                            <i class="fas fa-plane me-2"></i> Book Premium Package
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-5 py-3 fw-semibold">
+                            Watch 4K Journey <i class="fas fa-play-circle ms-2"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-5 pt-4 border-top border-white border-opacity-25">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <h4 class="fw-bold mb-0">1,607 km</h4>
+                                <small class="opacity-75">Full Circuit</small>
+                            </div>
+                            <div class="col-4">
+                                <h4 class="fw-bold mb-0">4,000+</h4>
+                                <small class="opacity-75">Pilgrims Every Year</small>
+                            </div>
+                            <div class="col-4">
+                                <h4 class="fw-bold mb-0">May - Oct</h4>
+                                <small class="opacity-75">2026 Season</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE FOUR DHAMS - Premium Cards -->
+    <section class="py-5 bg-white" id="char-dham">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-danger text-white px-3 py-2">Sacred Circuit</span>
+                <h2 class="section-header display-5 display-title fw-bold text-dark d-inline-block mx-auto mb-3">The Four Abodes</h2>
+                <p class="lead text-muted">Yamunotri → Gangotri → Kedarnath → Badrinath</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Yamunotri -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card dham-card">
+                        <img src="https://source.unsplash.com/800x600/?yamunotri,temple,himalayas" class="card-img-top" alt="Yamunotri">
+                        <div class="card-body p-4">
+                            <span class="badge badge-dham bg-warning text-dark">1 • Yamunotri</span>
+                            <h4 class="fw-bold mt-3 mb-2">Yamunotri Temple</h4>
+                            <p class="text-muted">Source of River Yamuna • Goddess Yamuna • Famous for Surya Kund & hot springs</p>
+                            
+                            <div class="d-flex justify-content-between text-sm mt-4">
+                                <div><i class="fas fa-mountain text-warning"></i> 3,293 m</div>
+                                <div><i class="fas fa-clock text-warning"></i> 6 hrs trek</div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                            <a href="#" class="btn btn-outline-danger w-100">Explore Yamunotri →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gangotri -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card dham-card">
+                        <img src="https://source.unsplash.com/800x600/?gangotri,ganga,himalayas" class="card-img-top" alt="Gangotri">
+                        <div class="card-body p-4">
+                            <span class="badge badge-dham bg-primary text-white">2 • Gangotri</span>
+                            <h4 class="fw-bold mt-3 mb-2">Gangotri Temple</h4>
+                            <p class="text-muted">Origin of Holy Ganga • Goddess Ganga • One of the most revered shrines</p>
+                            
+                            <div class="d-flex justify-content-between text-sm mt-4">
+                                <div><i class="fas fa-mountain text-primary"></i> 3,100 m</div>
+                                <div><i class="fas fa-clock text-primary"></i> Open May–Nov</div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                            <a href="#" class="btn btn-outline-danger w-100">Explore Gangotri →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kedarnath -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card dham-card">
+                        <img src="https://source.unsplash.com/800x600/?kedarnath,shiva,himalayas" class="card-img-top" alt="Kedarnath">
+                        <div class="card-body p-4">
+                            <span class="badge badge-dham bg-danger text-white">3 • Kedarnath</span>
+                            <h4 class="fw-bold mt-3 mb-2">Kedarnath Temple</h4>
+                            <p class="text-muted">One of 12 Jyotirlingas • Lord Shiva • Most majestic Himalayan shrine</p>
+                            
+                            <div class="d-flex justify-content-between text-sm mt-4">
+                                <div><i class="fas fa-mountain text-danger"></i> 3,583 m</div>
+                                <div><i class="fas fa-helicopter text-danger"></i> Helicopter available</div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                            <a href="#" class="btn btn-outline-danger w-100">Explore Kedarnath →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badrinath -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card dham-card">
+                        <img src="https://source.unsplash.com/800x600/?badrinath,vishnu,himalayas" class="card-img-top" alt="Badrinath">
+                        <div class="card-body p-4">
+                            <span class="badge badge-dham bg-success text-white">4 • Badrinath</span>
+                            <h4 class="fw-bold mt-3 mb-2">Badrinath Temple</h4>
+                            <p class="text-muted">Abode of Lord Vishnu • Char Dham finale • One of the holiest Vishnu temples</p>
+                            
+                            <div class="d-flex justify-content-between text-sm mt-4">
+                                <div><i class="fas fa-mountain text-success"></i> 3,133 m</div>
+                                <div><i class="fas fa-pray text-success"></i> Daily aarti</div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                            <a href="#" class="btn btn-outline-danger w-100">Explore Badrinath →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROUTE TIMELINE -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-header display-5 display-title text-center mb-5">Traditional Yatra Route</h2>
+            
+            <div class="timeline mx-auto" style="max-width: 900px;">
+                <div class="timeline-step d-flex justify-content-between align-items-center">
+                    <div class="text-end col-5">
+                        <h5 class="fw-bold text-danger">Yamunotri</h5>
+                        <p class="mb-0 text-muted small">Day 1-2 • Goddess Yamuna</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center mx-auto" style="width: 50px; height: 50px; font-size: 1.4rem;">1</div>
+                    </div>
+                    <div class="col-5"></div>
+                </div>
+                <div class="timeline-step d-flex justify-content-between align-items-center">
+                    <div class="col-5"></div>
+                    <div class="text-center">
+                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto" style="width: 50px; height: 50px; font-size: 1.4rem;">2</div>
+                    </div>
+                    <div class="text-start col-5">
+                        <h5 class="fw-bold text-primary">Gangotri</h5>
+                        <p class="mb-0 text-muted small">Day 3-4 • Goddess Ganga</p>
+                    </div>
+                </div>
+                <div class="timeline-step d-flex justify-content-between align-items-center">
+                    <div class="text-end col-5">
+                        <h5 class="fw-bold text-danger">Kedarnath</h5>
+                        <p class="mb-0 text-muted small">Day 5-7 • Lord Shiva</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center mx-auto" style="width: 50px; height: 50px; font-size: 1.4rem;">3</div>
+                    </div>
+                    <div class="col-5"></div>
+                </div>
+                <div class="timeline-step d-flex justify-content-between align-items-center">
+                    <div class="col-5"></div>
+                    <div class="text-center">
+                        <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center mx-auto" style="width: 50px; height: 50px; font-size: 1.4rem;">4</div>
+                    </div>
+                    <div class="text-start col-5">
+                        <h5 class="fw-bold text-success">Badrinath</h5>
+                        <p class="mb-0 text-muted small">Day 8-9 • Lord Vishnu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="display-5 display-title">Ready for your divine journey?</h2>
+            <p class="lead mb-4">Limited seats for 2026 season • Helicopter & VIP packages available</p>
+            <a href="#" class="btn btn-danger btn-lg px-5 py-3">Reserve Your Char Dham Yatra Now</a>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages • Char Dham Yatra 2026</title>
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #e6392b;
+            --accent: #f4a261;
+            --dark: #0f172a;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .display-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .navbar-custom {
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s ease;
+            border-bottom: 1px solid rgba(250, 204, 21, 0.15);
+        }
+
+        .hero-packages {
+            background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.85)),
+                        url('images/Badrinath.jpg') center/cover no-repeat fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero-packages::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 220px;
+            background: linear-gradient(transparent, #f8f9fa);
+        }
+
+        .section-header {
+            position: relative;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .package-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(230, 57, 43, 0.15);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(230, 57, 43, 0.25);
+        }
+        
+        .package-card .card-header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-weight: 600;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #ffd700;
+            color: #000;
+            font-size: 0.75rem;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .price {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .van-icon {
+            font-size: 2.5rem;
+            color: #e6392b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" width="220" alt="Char Dham Max Van" class="me-2">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="char-dham.html">Char Dham</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-warning btn-lg fw-bold px-5 py-2 shadow-sm" href="contact.html">
+                            Book Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-packages text-white">
+        <div class="container pt-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10 col-xl-8 pt-5">
+                    <span class="badge bg-white text-dark px-4 py-2 mb-4 fs-6">2026 Season • Limited Seats</span>
+                    <h1 class="display-1 display-title fw-bold mb-3">Char Dham Packages</h1>
+                    <p class="lead fs-3 mb-4">Safe & Comfortable Van Journeys</p>
+                    <p class="col-lg-8 mx-auto mb-5 fs-5">
+                        All packages include travel by Tempo Traveller, Innova Crysta, Max Van or Bolero
+                    </p>
+                    
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#packages" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                            View All Packages
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">
+                            Customize Your Package
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES SECTION -->
+    <section class="py-5 bg-white" id="packages">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-danger text-white px-3 py-2">2026 Season Packages</span>
+                <h2 class="section-header display-5 display-title fw-bold d-inline-block mx-auto">Choose Your Van Package</h2>
+                <p class="lead text-muted">Comfortable road journey by van • All packages include stay, meals & local transport</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Budget Package -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <div class="card-header">Budget Yatra</div>
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Basic Char Dham Circuit</h4>
+                            <div class="price">₹24,999</div>
+                            <small class="text-muted">Per Person • 9 Days / 8 Nights</small>
+                            
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Travel by AC Tempo Traveller / Max Van</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 3-star hotels & guest houses</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> All Veg Meals</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Pony service at Yamunotri & Gangotri</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Experienced driver + guide</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0 px-4 pb-4">
+                            <a href="contact.html" class="btn btn-outline-danger w-100">Book Budget Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Most Popular -->
+                <div class="col-lg-4 col-md-6 position-relative">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="package-card">
+                        <div class="card-header">Deluxe Yatra</div>
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Deluxe Char Dham Yatra</h4>
+                            <div class="price">₹44,999</div>
+                            <small class="text-muted">Per Person • 10 Days / 9 Nights</small>
+                            
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Comfortable AC Innova Crysta / Tempo Traveller</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 4-star hotels with good views</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> All meals + evening aarti</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Priority darshan assistance</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Expert local support team</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0 px-4 pb-4">
+                            <a href="contact.html" class="btn btn-danger w-100">Book Deluxe Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Van Package -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <div class="card-header">Premium Yatra</div>
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Premium Char Dham</h4>
+                            <div class="price">₹64,999</div>
+                            <small class="text-muted">Per Person • 11 Days / 10 Nights</small>
+                            
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Luxury Innova Crysta or similar</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 4 & 5-star hotels / resorts</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> All meals + special pujas</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Private driver + dedicated guide</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Best rooms with mountain view</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0 px-4 pb-4">
+                            <a href="contact.html" class="btn btn-outline-danger w-100">Book Premium Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kedarnath Special (Road) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <div class="card-header">Kedarnath Special</div>
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Kedarnath Van Yatra</h4>
+                            <div class="price">₹18,999</div>
+                            <small class="text-muted">Per Person • 5 Days / 4 Nights</small>
+                            
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Travel by AC Van / Tempo Traveller</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Stay in Guptkashi / Sonprayag</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Kedarnath trek / pony support</li>
+                                <li><i class="fas fa-check text-success me-2"></i> All meals & transfers</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0 px-4 pb-4">
+                            <a href="kedarnath-trip.html" class="btn btn-outline-danger w-100">Book Kedarnath Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badrinath Special -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <div class="card-header">Badrinath Special</div>
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Badrinath Van Yatra</h4>
+                            <div class="price">₹16,999</div>
+                            <small class="text-muted">Per Person • 4 Days / 3 Nights</small>
+                            
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Comfortable van travel</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Stay near Badrinath temple</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Mana village visit included</li>
+                                <li><i class="fas fa-check text-success me-2"></i> All meals</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0 px-4 pb-4">
+                            <a href="badrinath-trip.html" class="btn btn-outline-danger w-100">Book Badrinath Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family / Group -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <div class="card-header">Family / Group</div>
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Custom Group Package</h4>
+                            <div class="price">₹27,999</div>
+                            <small class="text-muted">Per Person (Min 4 Pax)</small>
+                            
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Private van for your group</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Flexible itinerary</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Senior & kid friendly options</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Custom dates & requirements</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0 px-4 pb-4">
+                            <a href="contact.html" class="btn btn-outline-danger w-100">Get Custom Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="display-5 display-title mb-3">Need Help Choosing the Right Package?</h2>
+            <p class="lead mb-4">Our experts will suggest the best van package as per your budget, group size & dates</p>
+            <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                <i class="fas fa-phone me-2"></i> Talk to Our Expert Now
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section text-white">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <img src="images/logo.png" width="180" alt="Char Dham Max Van">
+                    <p class="text-light opacity-75 mt-3">
+                        Trusted van service for Char Dham Yatra. 
+                        We provide Tempo Traveller, Innova Crysta, Max Van & Bolero for safe Himalayan journeys.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Our Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="char-dham.html">Char Dham Yatra by Van</a></li>
+                        <li><a href="kedarnath-trip.html">Kedarnath Van Package</a></li>
+                        <li><a href="badrinath-trip.html">Badrinath Van Package</a></li>
+                        <li><a href="local-travel.html">Local Travel</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <p class="mb-1">📍 Uttarakhand, India</p>
+                    <p class="mb-1">📞 +91 XXXXXXXXXX</p>
+                    <p class="mb-3">✉️ yourmail@gmail.com</p>
+
+                    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn btn-success btn-sm fw-bold">
+                        💬 Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="d-flex flex-column flex-md-row justify-content-between text-light opacity-75 small">
+                <span>© 2026 Char Dham Max Van. All Rights Reserved.</span>
+                <span>Safe • Comfortable • Reliable Van Travel</span>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+    .footer-section {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+    .footer-links a {
+        color: #cbd5e1;
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+    .footer-links a:hover {
+        color: #facc15;
+        padding-left: 5px;
+    }
+    </style>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
