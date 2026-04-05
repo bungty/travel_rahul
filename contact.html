@@ -290,15 +290,15 @@
                             <div class="contact-card p-4 h-100">
                                 <i class="fas fa-phone fa-2x text-danger mb-3"></i>
                                 <h5 class="fw-bold">Call Us</h5>
-                                <a href="tel:+919876543210" class="text-decoration-none text-dark fs-5 fw-semibold">+91 98765 43210</a>
-                                <p class="text-muted small mt-1">Toll Free: 1800-123-4567</p>
+                                <a href="tel:+919675769406" class="text-decoration-none text-dark fs-5 fw-semibold">+91-9675769406</a>
+                                <p class="text-muted small mt-1">Toll Free: 9675769406</p>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="contact-card p-4 h-100">
                                 <i class="fab fa-whatsapp fa-2x text-success mb-3"></i>
                                 <h5 class="fw-bold">WhatsApp</h5>
-                                <a href="https://wa.me/919876543210" target="_blank" class="text-decoration-none text-dark fs-5 fw-semibold">+91 98765 43210</a>
+                                <a href="https://wa.me/919675769406" target="_blank" class="text-decoration-none text-dark fs-5 fw-semibold">+91 98765 43210</a>
                                 <p class="text-muted small mt-1">Instant response in 60 seconds</p>
                             </div>
                         </div>
@@ -307,7 +307,7 @@
                     <div class="contact-card p-4 mt-4">
                         <i class="fas fa-envelope fa-2x text-danger mb-3"></i>
                         <h5 class="fw-bold">Email Us</h5>
-                        <a href="mailto:info@chardhamyatra.in" class="text-decoration-none text-dark fs-5 fw-semibold">info@chardhamyatra.in</a>
+                        <a href="mailto:Rahulkumar30693@gmail.com" class="text-decoration-none text-dark fs-5 fw-semibold">Rahulkumar30693@gmail.com</a>
                         <p class="text-muted small">For bookings, custom packages &amp; inquiries</p>
                     </div>
 
@@ -320,45 +320,122 @@
                 <div class="col-lg-7">
                     <h2 class="section-header display-5 display-title fw-bold mb-4">Send Us a Message</h2>
                     
-                    <form id="contactForm" class="contact-card p-5">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <label class="form-label fw-medium">Full Name <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control form-control-lg" placeholder="Enter your name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label fw-medium">Phone Number <span class="text-danger">*</span></label>
-                                <input type="tel" class="form-control form-control-lg" placeholder="+91 XXXXXXXXXX" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label fw-medium">Email Address</label>
-                                <input type="email" class="form-control form-control-lg" placeholder="your@email.com">
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label fw-medium">Interested In</label>
-                                <select class="form-select form-select-lg">
-                                    <option>Full Char Dham Yatra Package</option>
-                                    <option>Kedarnath Helicopter Package</option>
-                                    <option>Badrinath Road Package</option>
-                                    <option>Yamunotri + Gangotri Only</option>
-                                    <option>Custom / Luxury Package</option>
-                                    <option>Outstation Travel Help</option>
-                                    <option>Other Inquiry</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label fw-medium">Your Message / Requirement <span class="text-danger">*</span></label>
-                                <textarea class="form-control form-control-lg" rows="5" placeholder="Tell us about your travel dates, number of people, any special requirements..." required></textarea>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-4">
-                            <button type="submit" class="btn btn-danger btn-lg px-5 py-3 fw-bold w-100">
-                                <i class="fas fa-paper-plane me-2"></i> Send Message
-                            </button>
-                            <p class="text-center text-muted small mt-3">We reply within 2 hours during office hours</p>
-                        </div>
-                    </form>
+                  <form id="contactForm" class="contact-card p-5">
+    <div class="row g-4">
+
+        <!-- Full Name -->
+        <div class="col-md-6">
+            <label class="form-label fw-medium">Full Name <span class="text-danger">*</span></label>
+            <input type="text" id="name" class="form-control form-control-lg" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="col-md-6">
+            <label class="form-label fw-medium">Phone Number <span class="text-danger">*</span></label>
+            <input type="tel" id="phone" class="form-control form-control-lg" placeholder="+91 XXXXXXXXXX" required>
+        </div>
+
+        <!-- Email Address -->
+        <div class="col-md-6">
+            <label class="form-label fw-medium">Email Address (Optional)</label>
+            <input type="email" id="email" class="form-control form-control-lg" placeholder="your@email.com">
+        </div>
+
+        <!-- Interested In -->
+        <div class="col-md-6">
+            <label class="form-label fw-medium">Interested In</label>
+            <select id="interest" class="form-select form-select-lg">
+                <option value="" selected disabled>Select option</option>
+                <option value="Full Char Dham Yatra">Full Char Dham Yatra (Van)</option>
+                <option value="Kedarnath Road Package">Kedarnath Road Package</option>
+                <option value="Badrinath Road Package">Badrinath Road Package</option>
+                <option value="Yamunotri + Gangotri">Yamunotri + Gangotri Only</option>
+                <option value="Local Travel">Local Travel in Uttarakhand</option>
+                <option value="Outstation Travel">Outstation Travel</option>
+                <option value="Custom Group Package">Custom Group / Family Package</option>
+                <option value="Other Inquiry">Other Inquiry</option>
+            </select>
+        </div>
+
+        <!-- Message -->
+        <div class="col-12">
+            <label class="form-label fw-medium">Your Message / Requirement <span class="text-danger">*</span></label>
+            <textarea id="message" class="form-control form-control-lg" rows="5" 
+                placeholder="Tell us about your travel dates, number of people, pickup location, any special requirements..." required></textarea>
+        </div>
+
+    </div>
+    
+    <div class="mt-4">
+        <button type="submit" class="btn btn-danger btn-lg px-5 py-3 fw-bold w-100">
+            <i class="fas fa-paper-plane me-2"></i> Send Message
+        </button>
+        <p class="text-center text-muted small mt-3">We will reply on WhatsApp & Call within 2 hours</p>
+    </div>
+</form>
+
+<script>
+// Form Submission - Sends to WhatsApp + Email
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const interest = document.getElementById('interest').value;
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !phone || !message) {
+        alert("Please fill all required fields (*)");
+        return;
+    }
+
+    // WhatsApp Message
+    let whatsappMsg = `*New Inquiry from Website*%0A%0A`;
+    whatsappMsg += `*Name:* ${name}%0A`;
+    whatsappMsg += `*Phone:* ${phone}%0A`;
+    
+    if (email) whatsappMsg += `*Email:* ${email}%0A`;
+    if (interest) whatsappMsg += `*Interested In:* ${interest}%0A`;
+    
+    whatsappMsg += `%0A*Message:*%0A${message}%0A%0A`;
+    whatsappMsg += `Please reply with best van rates.`;
+
+    // Change this to your WhatsApp number (with country code, no +)
+    const yourWhatsAppNumber = "919675769406";   // ←←← PUT YOUR NUMBER HERE
+
+    const whatsappURL = `https://wa.me/${yourWhatsAppNumber}?text=${whatsappMsg}`;
+
+    // Open WhatsApp
+    window.open(whatsappURL, '_blank');
+
+    // Email (Optional)
+    const subject = `New Inquiry: ${name} - ${interest || 'General Inquiry'}`;
+    let emailBody = `New Contact Form Submission\n\n`;
+    emailBody += `Name: ${name}\n`;
+    emailBody += `Phone: ${phone}\n`;
+    if (email) emailBody += `Email: ${email}\n`;
+    if (interest) emailBody += `Interested In: ${interest}\n`;
+    emailBody += `Message:\n${message}\n\n`;
+    emailBody += `Please contact the customer soon.`;
+
+    const yourEmail = "Rahulkumar30693@gmail.com";   // ←←← PUT YOUR EMAIL HERE
+
+    const mailtoLink = `mailto:${yourEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+
+    // Open email after a short delay
+    setTimeout(() => {
+        window.location.href = mailtoLink;
+    }, 1200);
+
+    // Reset form & show success message
+    setTimeout(() => {
+        document.getElementById('contactForm').reset();
+        alert("Thank you! Your inquiry has been sent via WhatsApp. We will contact you shortly.");
+    }, 1800);
+
+});
+</script>
                 </div>
             </div>
         </div>
@@ -392,7 +469,7 @@
                 <a href="tel:+919876543210" class="btn btn-light btn-lg px-5 py-3 fw-bold">
                     <i class="fas fa-phone me-2"></i> Call Now
                 </a>
-                <a href="https://wa.me/919876543210" target="_blank" class="btn btn-success btn-lg px-5 py-3 fw-bold">
+                <a href="https://wa.me/919675769406" target="_blank" class="btn btn-success btn-lg px-5 py-3 fw-bold">
                     <i class="fab fa-whatsapp me-2"></i> WhatsApp Us
                 </a>
             </div>
@@ -400,7 +477,7 @@
     </section>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float">
+    <a href="https://wa.me/919675769406" target="_blank" class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
 
