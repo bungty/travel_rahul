@@ -68,16 +68,16 @@
 <style>
 /* Modern Navbar Design */
 .navbar-custom {
-  background: rgba(15, 23, 42, 0.92); /* Deeper dark with better opacity */
-  backdrop-filter: blur(16px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: #00000054; /* pure transparent */
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: none;
   transition: all 0.4s ease;
-  border-bottom: 1px solid rgba(250, 204, 21, 0.15);
 }
 
+/* Scroll hone ke baad background aayega */
 .navbar-custom.scrolled {
-  background: rgba(15, 23, 42, 0.98);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  background: rgba(15, 23, 42, 0.85); /* dark glass */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
 /* Logo */
@@ -246,32 +246,40 @@ background: linear-gradient(rgb(0 0 0 / 41%), rgb(0 0 0 / 34%)), url(images/m_Ya
 
     <div class="row g-4">
 
-      <!-- Existing Services -->
+      <!-- Max Van Service -->
       <div class="col-md-4">
         <div class="service-card h-100">
-          <div class="service-icon">🚐</div>
-          <h5 class="fw-bold mt-3">Char Dham Max Van Service</h5>
-          <p class="text-muted">Safe and comfortable Max Van service for full Char Dham Yatra.</p>
+          <div class="service-icon">
+            <img src="images/van.png" alt="Van">
+          </div>
+          <h5 class="fw-bold mt-3">Char Dham </h5>
+          <p class="text-muted">Safe and comfortable  Van service for full Char Dham Yatra.</p>
         </div>
       </div>
 
+      <!-- Family Travel -->
       <div class="col-md-4">
         <div class="service-card h-100">
-          <div class="service-icon">👨‍👩‍👧‍👦</div>
+          <div class="service-icon">
+            <img src="images/family.png" alt="Family Travel">
+          </div>
           <h5 class="fw-bold mt-3">Family & Group Travel</h5>
           <p class="text-muted">Ideal Max Traveller for family trips and group pilgrimages.</p>
         </div>
       </div>
 
+      <!-- Long Distance -->
       <div class="col-md-4">
         <div class="service-card h-100">
-          <div class="service-icon">🛣️</div>
+          <div class="service-icon">
+            <img src="images/road.png" alt="Road Travel">
+          </div>
           <h5 class="fw-bold mt-3">Long Distance Travel</h5>
           <p class="text-muted">Reliable vehicles for long-distance & hill travel.</p>
         </div>
       </div>
 
-      <!-- NEW SECTION TITLE -->
+      <!-- Section Title -->
       <div class="col-12 mt-4">
         <h3 class="fw-bold">All Types Car Service</h3>
       </div>
@@ -279,7 +287,9 @@ background: linear-gradient(rgb(0 0 0 / 41%), rgb(0 0 0 / 34%)), url(images/m_Ya
       <!-- Swift Dzire -->
       <div class="col-md-4">
         <div class="service-card h-100">
-          <div class="service-icon">🚗</div>
+          <div class="service-icon">
+            <img src="images/dzire.png" alt="Dzire">
+          </div>
           <h5 class="fw-bold mt-3">Swift Dzire</h5>
           <p class="text-muted">Comfortable sedan perfect for city rides and small family trips.</p>
         </div>
@@ -288,16 +298,20 @@ background: linear-gradient(rgb(0 0 0 / 41%), rgb(0 0 0 / 34%)), url(images/m_Ya
       <!-- Ertiga -->
       <div class="col-md-4">
         <div class="service-card h-100">
-          <div class="service-icon">🚙</div>
+          <div class="service-icon">
+            <img src="images/ertiga.png" alt="Ertiga">
+          </div>
           <h5 class="fw-bold mt-3">Ertiga</h5>
           <p class="text-muted">Spacious MPV ideal for group travel and long journeys.</p>
         </div>
       </div>
 
-      <!-- Innova Crysta -->
+      <!-- Innova -->
       <div class="col-md-4">
         <div class="service-card h-100">
-          <div class="service-icon">🚘</div>
+          <div class="service-icon">
+            <img src="images/innova.png" alt="Innova">
+          </div>
           <h5 class="fw-bold mt-3">Innova Crysta</h5>
           <p class="text-muted">Premium SUV for luxury travel with maximum comfort.</p>
         </div>
@@ -306,16 +320,20 @@ background: linear-gradient(rgb(0 0 0 / 41%), rgb(0 0 0 / 34%)), url(images/m_Ya
       <!-- Bolero -->
       <div class="col-md-4">
         <div class="service-card h-100">
-          <div class="service-icon">🚜</div>
+          <div class="service-icon">
+            <img src="images/bolero.png" alt="Bolero">
+          </div>
           <h5 class="fw-bold mt-3">Bolero</h5>
           <p class="text-muted">Strong and reliable vehicle for rough roads and hill areas.</p>
         </div>
       </div>
 
-      <!-- Max Traveller -->
+      <!-- Traveller -->
       <div class="col-md-4">
         <div class="service-card h-100">
-          <div class="service-icon">🚐</div>
+          <div class="service-icon">
+            <img src="images/traveller.png" alt="Traveller">
+          </div>
           <h5 class="fw-bold mt-3">Max Traveller</h5>
           <p class="text-muted">Best choice for large groups and Char Dham Yatra trips.</p>
         </div>
@@ -324,13 +342,14 @@ background: linear-gradient(rgb(0 0 0 / 41%), rgb(0 0 0 / 34%)), url(images/m_Ya
     </div>
   </div>
 </section>
+
 <style>
-    .services-section {
+.services-section {
   background: linear-gradient(135deg, #fffdf7, #f8f9fa);
 }
 
 .service-card {
-  background: white;
+  background: #fff;
   padding: 35px 25px;
   border-radius: 18px;
   box-shadow: 0 8px 22px rgba(0,0,0,0.08);
@@ -343,15 +362,29 @@ background: linear-gradient(rgb(0 0 0 / 41%), rgb(0 0 0 / 34%)), url(images/m_Ya
 }
 
 .service-icon {
-  font-size: 45px;
+  width: 100%;
+  height: 160px; /* height increase for better look */
   background: #fff6dd;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  overflow: hidden;
+}
+
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* important */
+}
+
+.service-card {
+  padding: 0;
+}
+
+.service-card h5,
+.service-card p {
+  padding: 0 20px;
 }
 
 </style>
